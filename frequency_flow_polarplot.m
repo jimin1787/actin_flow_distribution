@@ -22,19 +22,6 @@ newAngle = 360 + angleVel(indx);
 angleVel(indx) = newAngle;
 allFrameAngle{1,veli} = angleVel; %Angle Values of all the frames
 finalAngleVel = [finalAngleVel angleVel']; %After merging
-% %% Save Histogram
-% fileName = ['Histogram of Frame ' num2str(veli)];
-% figure
-% histogram(angleVel,'BinWidth',1);
-% xlabel('Degree')
-% saveas(gca,[fileName,'.png']);
-% saveas(gca,[fileName,'.fig']);
-% %% Save Compass
-% figure();
-% fileName = ['Compass of Frame ' num2str(veli)];
-% compass(refinedVx,refinedVy)
-% saveas(gca,[fileName,'.png']);
-% saveas(gca,[fileName,'.fig']);
 
 end
 
