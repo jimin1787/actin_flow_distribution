@@ -25,7 +25,7 @@ allFrameAngle{1,veli} = angleVel; %Angle Values of all the frames
 finalAngleVel = [finalAngleVel angleVel']; %After merging
 end
 
-%% Polar Histogram Plot
+%%Polar Histogram Plot
 fileName = ['merged histogram polar plot' num2str(veli)];
 th = 1:360;
 th = deg2rad(th);
@@ -37,5 +37,5 @@ title('Radar Plot of Actin Flow')
 saveas(gca,[fileName,'.fig']);
 
 % 
-% figure()
-% polarscatter(th,values,'MarkerFaceColor','blue')
+%figure()
+%polarscatter(th,values,'MarkerFaceColor','blue')
