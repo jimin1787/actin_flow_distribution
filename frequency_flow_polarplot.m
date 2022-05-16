@@ -38,4 +38,4 @@ saveas(gca,[fileName,'.fig']);
 
 %figure()
 %polarscatter(th,values,'MarkerFaceColor','blue')
-%Thanks to Bhoj Raj Thapa for helping custmizing MATLAB script
+%Thanks to Bhoj Raj Thapa for helping customizing MATLAB script
