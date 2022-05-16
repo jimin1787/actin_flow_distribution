@@ -1,4 +1,5 @@
-%% Testing
+%%Sorting out flow veclocity vectors resulting from the custom MATLAB scripts for STICS analysis generated from Ashdown et al., 2015, Jove J, DOI: 10.3791/53749
+%%Calculating flow direction angles
 clear; close all;
 velocityMap = load('/Users/jmshin/Desktop/FromDaichi/Synergid_STICS/1-1.newroi2/STICSOutputs\VelocityMapF-actin Flow.mat').velocityMap;
 finalAngleVel = [];
