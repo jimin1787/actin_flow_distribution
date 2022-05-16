@@ -23,31 +23,9 @@ newAngle = 360 + angleVel(indx);
 angleVel(indx) = newAngle;
 allFrameAngle{1,veli} = angleVel; %Angle Values of all the frames
 finalAngleVel = [finalAngleVel angleVel']; %After merging
-% %% Save Histogram
-% fileName = ['Histogram of Frame ' num2str(veli)];
-% figure
-% histogram(angleVel,'BinWidth',1);
-% xlabel('Degree')
-% saveas(gca,[fileName,'.png']);
-% saveas(gca,[fileName,'.fig']);
-% %% Save Compass
-% figure();
-% fileName = ['Compass of Frame ' num2str(veli)];
-% compass(refinedVx,refinedVy)
-% saveas(gca,[fileName,'.png']);
-% saveas(gca,[fileName,'.fig']);
-
 end
 
-
-%% Merged Histogram
-figure();
-hist = histogram(finalAngleVel,'Normalization','pdf','BinWidth',1);
-[values, edges] = histcounts(finalAngleVel, 'Normalization', 'probability','BinWidth',1);
-
-figure();
-plot(values,'LineWidth',1.5);
-%% Polar Histogram Plot
+%%Polar Histogram Plot
 fileName = ['merged histogram polar plot' num2str(veli)];
 th = 1:360;
 th = deg2rad(th);
@@ -58,7 +36,7 @@ h.DisplayStyle = 'stairs';
 title('Radar Plot of Actin Flow')
 saveas(gca,[fileName,'.fig']);
 
-% 
-% figure()
-% polarscatter(th,values,'MarkerFaceColor','blue')
+%figure()
+%polarscatter(th,values,'MarkerFaceColor','blue')
+%Thanks to Bhoj Raj Thapa for helping cusmozing MATLAB script
 
